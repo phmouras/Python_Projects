@@ -1,0 +1,83 @@
+{
+   "campos": {
+    "[nome do aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+   "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+
+  "[tese/dissertação]": {
+      "tipo": "radio",
+      "opcoes": ["tese", "dissertação"],
+      "rotulo": "Trabalho de conclusão (dissertação/tese)",
+      "obrigatorio": true
+  },
+
+   "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    },
+
+  "[doutorando(a)/mestrando(a)]": {
+      "tipo": "radio",
+      "opcoes": ["doutorando(a)", "mestrando(a)"],
+      "rotulo": "Formação aluno (doutorando(a)/mestrando(a))",
+      "obrigatorio": true
+  },
+
+    "[nome orientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do orientador",
+      "obrigatorio": true
+    },
+
+    "[nome coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do coorientador",
+      "obrigatorio": true
+    },
+
+    "[nome membro externo 1]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro externo 1",
+      "obrigatorio": true
+    },
+
+    "[sigla_externo 1]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição do membro externo 1",
+      "obrigatorio": true
+    },
+
+    "[nome membro externo 2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[sigla_externo 2]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[nome membro interno 1]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 1",
+      "obrigatorio": true
+    },
+
+    "[nome membro interno 2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 2",
+      "obrigatorio": true
+    }
+  }
+}

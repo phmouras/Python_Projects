@@ -1,0 +1,187 @@
+ 
+{
+  
+  "campos": {
+    "[dia_data]": {
+      "tipo": "texto",
+      "rotulo": "Dia da defesa",
+      "obrigatorio": true
+    },
+
+   "[mês_data]": {
+      "tipo": "texto",
+      "rotulo": "Mês da defesa",
+      "obrigatorio": true
+    },
+
+    "[ano_data]": {
+      "tipo": "texto",
+      "rotulo": "Ano da defesa",
+      "obrigatorio": true
+    },
+
+    "[horário defesa]": {
+      "tipo": "texto",
+      "rotulo": "Horário do início da defesa",
+      "obrigatorio": true
+    },
+
+    "[horário término]": {
+      "tipo": "texto",
+      "rotulo": "Horário do término da defesa",
+      "obrigatorio": true
+    },
+
+    "[local defesa]": {
+      "tipo": "texto",
+      "rotulo": "Local e/ou link da conferência virtual",
+      "obrigatorio": true
+    },
+
+    "[numero pagina]": {
+      "tipo": "texto",
+      "rotulo": "Número de páginas do trabalho",
+      "obrigatorio": true
+    },
+
+    "[idioma]": {
+      "tipo": "texto",
+      "rotulo": "Idioma do trabalho",
+      "obrigatorio": true
+    },
+
+    "[Resumo]": {
+      "tipo": "texto",
+      "rotulo": "Resumo do trabalho",
+      "obrigatorio": true
+    },
+
+    "[palavras chave]": {
+      "tipo": "texto",
+      "rotulo": "Palavras-chave do trabalho",
+      "obrigatorio": true
+    },
+
+    "[abstract]": {
+      "tipo": "texto",
+      "rotulo": "Resumo em inglês(abstract)",
+      "obrigatorio": true
+    },
+
+    "[keywords]": {
+      "tipo": "texto",
+      "rotulo": "Palavras-chave em inglês(keywords)",
+      "obrigatorio": true
+    },
+
+    "[nome do aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+    "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+
+    "[nome orientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do orientador",
+      "obrigatorio": true
+    },
+
+    "[cpf orientador]": {
+      "tipo": "texto",
+      "rotulo": "CPF do orientador",
+      "obrigatorio": true
+    },
+
+    "[email orientador]": {
+      "tipo": "texto",
+      "rotulo": "Email do orientador",
+      "obrigatorio": true
+    },
+
+    "[nome coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do coorientador",
+      "obrigatorio": true
+    }, 
+
+    "[cpf coorientador]": {
+      "tipo": "texto",
+      "rotulo": "CPF do coorientador",
+      "obrigatorio": true
+    },
+
+    "[email coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Email do coorientador",
+      "obrigatorio": true
+    },
+
+    "[nome membro externo]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro externo ",
+      "obrigatorio": true
+    },
+
+    "[cpf membro externo]": {
+      "tipo": "texto",
+      "rotulo": "CPF do membro externo ",
+      "obrigatorio": true
+    },
+
+    "[email membro externo]": {
+      "tipo": "texto",
+      "rotulo": "Email do membro externo ",
+      "obrigatorio": true
+    },
+
+    "[sigla_externo]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição do membro externo ",
+      "obrigatorio": true
+    },
+  
+    "[nome membro interno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 1",
+      "obrigatorio": true
+    },
+
+    "[cpf membro interno]": {
+      "tipo": "texto",
+      "rotulo": "CPF do membro interno ",
+      "obrigatorio": true
+    },
+
+    "[email membro interno]": {
+      "tipo": "texto",
+      "rotulo": "Email do membro interno ",
+      "obrigatorio": true
+    },
+
+    "[Tese/Dissertação]": {
+        "tipo": "radio",
+        "opcoes": ["Dissertação", "Tese"],
+        "rotulo": "Trabalho de conclusão (Dissertação/Tese)",
+        "obrigatorio": true
+    },
+
+    "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    },
+
+    "[titular/suplente]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro externo titular ou suplente",
+        "obrigatorio": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+ 
+{
+  "campos": {
+    "[nome do aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+    "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+    "[nome coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do coorientador",
+      "obrigatorio": true
+    }, 
+    
+    "[doutorado mestrado acadêmico]": {
+      "tipo": "texto",
+      "rotulo": "Formação aluno",
+      "obrigatorio": true
+    },
+
+    "[bolsa]": {
+      "tipo": "texto",
+      "rotulo": "Nome da bolsa",
+      "obrigatorio": true
+    },
+    "[matr_aluno]": {
+      "tipo": "texto",
+      "rotulo": "Matrícula do aluno",
+      "obrigatorio": true
+    },
+    "[data coorientação]": {
+      "tipo": "texto",
+      "rotulo": "Data inicial da coorientação",
+      "obrigatorio": true   
+    },
+
+    "[tese/dissertação]": {
+        "tipo": "radio",
+        "opcoes": ["tese", "dissertação"],
+        "rotulo": "Trabalho de conclusão (dissertação/tese)",
+        "obrigatorio": true
+    },
+
+    "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    }
+  }
+}

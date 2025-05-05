@@ -1,0 +1,67 @@
+
+{
+
+   "campos": {
+    "[nome do aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+   "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+
+    "[nome orientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do orientador",
+      "obrigatorio": true
+    },
+
+    "[matrícula orientador]": {
+      "tipo": "texto",
+      "rotulo": "Matrícula do orientador",
+      "obrigatorio": true
+    }, 
+
+    "[doutorado/mestrado acadêmico]": {
+        "tipo": "radio",
+        "opcoes": ["doutorado", "mestrado acadêmico"],
+        "rotulo": "Doutorado ou Mestrado acadêmico",
+        "obrigatorio": true
+    },
+
+    "[matr_aluno]": {
+      "tipo": "texto",
+      "rotulo": "Matrícula do aluno",
+      "obrigatorio": true
+    },
+
+   "[data orientação]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+
+    "[tese/dissertação]": {
+        "tipo": "radio",
+        "opcoes": ["tese", "dissertação"],
+        "rotulo": "Trabalho de conclusão (dissertação/tese)",
+        "obrigatorio": true
+    },
+
+   "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    },
+
+    "[bolsa]": {
+      "tipo": "texto",
+      "rotulo": "Nome da bolsa",
+      "obrigatorio": true
+    }
+  }
+}

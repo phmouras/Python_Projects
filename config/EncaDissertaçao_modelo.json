@@ -1,0 +1,118 @@
+{
+  "nome": "campos_Enca_Dissertacao_modelo",
+  
+   "campos": {
+    "[nome aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+   "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    },
+
+    "[nome destinatario]": {
+      "tipo": "texto",
+      "rotulo": "Nome destinatário",
+      "obrigatorio": true
+    },
+
+    "[filiação+sigla]": {
+      "tipo": "texto",
+      "rotulo": "Filiação + sigla",
+      "obrigatorio": true
+    },
+
+    "[tese/dissertação]": {
+        "tipo": "radio",
+        "opcoes": ["tese", "dissertação"],
+        "rotulo": "Trabalho de conclusão (tese/dissertação)",
+        "obrigatorio": true
+    },
+
+   "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    },
+
+   "[seu cargo/ cargo do(a) prof(a)]": {
+      "tipo": "texto",
+      "rotulo": "Seu cargo/ cargo do(a) prof(a)",
+      "obrigatorio": true   
+    },
+
+    "[nome orientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do orientador",
+      "obrigatorio": true
+    },
+
+    "[nome coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do coorientador",
+      "obrigatorio": true
+    },
+
+    "[nome membro externo]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro externo",
+      "obrigatorio": true
+    },
+
+    "[nome membro interno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno",
+      "obrigatorio": true
+    },
+
+    "[titular/suplente ex]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro externo titular ou suplente",
+        "obrigatorio": true
+    },
+
+    "[titular/suplente in]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro interno titular ou suplente",
+        "obrigatorio": true
+    },
+
+    "[sigla_externo]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição membro externo",
+      "obrigatorio": true
+    },
+
+    "[horário defesa]": {
+      "tipo": "texto",
+      "rotulo": "Horário da defesa",
+      "obrigatorio": true
+    },
+
+    "[local_sala]": {
+      "tipo": "texto",
+      "rotulo": "Sala da defesa",
+      "obrigatorio": true
+    },
+
+    "[doutorando(a)/mestrando(a)]": {
+        "tipo": "radio",
+        "opcoes": ["doutorando(a)", "mestrando(a)"],
+        "rotulo": "Aluno(a) mestrando(a) ou doutorando(a)",
+        "obrigatorio": true
+    },
+
+    "[email aluno]": {
+      "tipo": "texto",
+      "rotulo": "Email do aluno",
+      "obrigatorio": true
+    }
+
+  }
+}

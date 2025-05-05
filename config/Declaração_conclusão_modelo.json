@@ -1,0 +1,66 @@
+
+{
+  "campos": {
+    "[nome do aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+    "[nome orientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do orientador",
+      "obrigatorio": true
+    },
+
+    "[nome coorientador]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do coorientador",
+      "obrigatorio": true
+    },
+
+    "[título]": {
+      "tipo": "texto",
+      "rotulo": "Título do trabalho",
+      "obrigatorio": true   
+    },
+
+    "[nacionalidade]": {
+      "tipo": "texto",
+      "rotulo": "Nacionalidade do aluno",
+      "obrigatorio": true
+    },
+
+    "[numero identidade]": {
+      "tipo": "texto",
+      "rotulo": "RG do aluno",
+      "obrigatorio": true
+    },
+
+    "[CPF]": {
+      "tipo": "texto",
+      "rotulo": "CPF do aluno",
+      "obrigatorio": true
+    },
+
+    "[matr_aluno]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do aluno",
+      "obrigatorio": true
+    },
+
+    "[Doutorado/ Mestrado Acadêmico]": {
+        "tipo": "radio",
+        "opcoes": ["Doutorado", "Mestrado acadêmico"],
+        "rotulo": "Doutorado ou Mestrado acadêmico",
+        "obrigatorio": true
+    },
+
+    "[data defesa]": {
+      "tipo": "data",
+      "rotulo": "Data da defesa (dd/mm/aaaa)",
+      "obrigatorio": true
+    }
+
+  }
+}
