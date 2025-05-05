@@ -25,6 +25,12 @@
       "obrigatorio": true   
     },
 
+    "[matr_aluno]": {
+      "tipo": "texto",
+      "rotulo": "Matrícula do aluno",
+      "obrigatorio": true
+  },
+
     "[nacionalidade]": {
       "tipo": "texto",
       "rotulo": "Nacionalidade do aluno",
