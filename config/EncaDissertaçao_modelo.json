@@ -1,20 +1,18 @@
-{
-  "nome": "campos_Enca_Dissertacao_modelo",
-  
+{  
    "campos": {
-    "[nome aluno]": {
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-   "[data defesa]": {
-      "tipo": "data",
+   "[data_defesa]": {
+      "tipo": "texto",
       "rotulo": "Data da defesa (dd/mm/aaaa)",
       "obrigatorio": true
     },
 
-    "[nome destinatario]": {
+    "[nome_destinatario]": {
       "tipo": "texto",
       "rotulo": "Nome destinatário",
       "obrigatorio": true
@@ -22,7 +20,7 @@
 
     "[filiação+sigla]": {
       "tipo": "texto",
-      "rotulo": "Filiação + sigla",
+      "rotulo": "Filiação + sigla do destinatário",
       "obrigatorio": true
     },
 
@@ -39,57 +37,89 @@
       "obrigatorio": true   
     },
 
-   "[seu cargo/ cargo do(a) prof(a)]": {
+   "[seu cargo/cargo do(a) prof(a)]": {
       "tipo": "texto",
       "rotulo": "Seu cargo/ cargo do(a) prof(a)",
       "obrigatorio": true   
     },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[nome coorientador]": {
+    "[nome_coorientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do coorientador",
       "obrigatorio": true
     },
 
-    "[nome membro externo]": {
+    "[nome_membro_externo1]": {
       "tipo": "texto",
-      "rotulo": "Nome completo do membro externo",
+      "rotulo": "Nome completo do membro externo 1",
       "obrigatorio": true
     },
 
-    "[nome membro interno]": {
+    "[sigla_externo2]": {
       "tipo": "texto",
-      "rotulo": "Nome completo do membro interno",
+      "rotulo": "Sigla instituição membro externo 2",
       "obrigatorio": true
     },
 
-    "[titular/suplente ex]": {
+    "[nome_membro_interno1]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 1",
+      "obrigatorio": true
+    },
+
+    "[nome_membro_interno2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 2",
+      "obrigatorio": true
+    },
+
+    "[titular/suplente ex1]": {
         "tipo": "radio",
         "opcoes": ["titular", "suplente"],
-        "rotulo": "Membro externo titular ou suplente",
+        "rotulo": "Membro externo 1: titular ou suplente",
         "obrigatorio": true
     },
 
-    "[titular/suplente in]": {
+    "[titular/suplente ex2]": {
         "tipo": "radio",
         "opcoes": ["titular", "suplente"],
-        "rotulo": "Membro interno titular ou suplente",
+        "rotulo": "Membro externo 2: titular ou suplente",
         "obrigatorio": true
     },
 
-    "[sigla_externo]": {
+    "[titular/suplente in1]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro interno 1: titular ou suplente",
+        "obrigatorio": true
+    },
+
+    "[titular/suplente in2]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro interno 2: titular ou suplente",
+        "obrigatorio": true
+    },
+
+    "[nome_membro_externo2]": {
       "tipo": "texto",
-      "rotulo": "Sigla instituição membro externo",
+      "rotulo": "Nome completo do membro externo 2",
       "obrigatorio": true
     },
 
-    "[horário defesa]": {
+    "[sigla_externo2]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[horário_defesa]": {
       "tipo": "texto",
       "rotulo": "Horário da defesa",
       "obrigatorio": true
@@ -108,7 +138,7 @@
         "obrigatorio": true
     },
 
-    "[email aluno]": {
+    "[email_aluno]": {
       "tipo": "texto",
       "rotulo": "Email do aluno",
       "obrigatorio": true

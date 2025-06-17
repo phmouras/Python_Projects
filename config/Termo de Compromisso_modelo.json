@@ -1,19 +1,19 @@
 {
   
   "campos": {
-    "[nome do aluno]": {
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[nome coorientador]": {
+    "[nome_coorientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do coorientador",
       "obrigatorio": true
@@ -37,13 +37,13 @@
       "obrigatorio": true
     },
 
-    "[numero identidade]": {
+    "[numero_identidade]": {
       "tipo": "texto",
       "rotulo": "RG do aluno",
       "obrigatorio": true
     },
 
-    "[numero cpf]": {
+    "[numero_cpf]": {
       "tipo": "texto",
       "rotulo": "CPF do aluno",
       "obrigatorio": true
@@ -69,9 +69,9 @@
         "obrigatorio": true
     },
 
-    "[data defesa]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+    "[data_defesa]": {
+      "tipo": "texto",
+      "rotulo": "Data da defesa (por extenso)",
       "obrigatorio": true
     }
   }

@@ -1,37 +1,37 @@
 {
   
   "campos": {
-    "[nome aluno]": {
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-    "[data defesa]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+    "[data_defesa]": {
+      "tipo": "texto",
+      "rotulo": "Data da defesa (por extenso)",
       "obrigatorio": true
     },
 
-    "[ano defesa]": {
+    "[ano_defesa]": {
       "tipo": "texto",
       "rotulo": "Ano da defesa",
       "obrigatorio": true
     },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[nome coorientador]": {
+    "[nome_coorientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do coorientador",
       "obrigatorio": true
     },
 
-    "[instituição coorientador]": {
+    "[instituição_coorientador]": {
       "tipo": "texto",
       "rotulo": "Instituição do coorientador",
       "obrigatorio": true
@@ -43,21 +43,33 @@
       "obrigatorio": true   
     },
 
-    "[nome membro externo]": {
+    "[nome_membro_externo1]": {
       "tipo": "texto",
-      "rotulo": "Nome completo do membro externo ",
+      "rotulo": "Nome completo do membro externo 1",
       "obrigatorio": true
     },
 
-    "[nome membro interno]": {
+    "[intituição_membro_externo1]": {
       "tipo": "texto",
-      "rotulo": "Nome completo do membro interno",
+      "rotulo": "Nome completo do membro externo 1",
       "obrigatorio": true
     },
 
-    "[Doutor/Mestre]": {
+    "[instituição_membro_externo2]": {
       "tipo": "texto",
-      "rotulo": "Doutor/Mestre",
+      "rotulo": "Nome completo do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[nome_membro_interno1]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 1",
+      "obrigatorio": true
+    },
+
+    "[nome_membro_interno2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 2",
       "obrigatorio": true
     },
 
@@ -68,7 +80,7 @@
         "obrigatorio": true
     },
 
-    "[Instituição_membro externo]": {
+    "[instituição_membro_externo]": {
       "tipo": "texto",
       "rotulo": "Instituição do membro externo",
       "obrigatorio": true

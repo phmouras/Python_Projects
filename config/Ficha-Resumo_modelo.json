@@ -14,31 +14,31 @@
       "obrigatorio": true
     },
 
-    "[ano_data]": {
+    "[ano_defesa]": {
       "tipo": "texto",
       "rotulo": "Ano da defesa",
       "obrigatorio": true
     },
 
-    "[horário defesa]": {
+    "[horário_defesa]": {
       "tipo": "texto",
       "rotulo": "Horário do início da defesa",
       "obrigatorio": true
     },
 
-    "[horário término]": {
+    "[horário_término]": {
       "tipo": "texto",
       "rotulo": "Horário do término da defesa",
       "obrigatorio": true
     },
 
-    "[local defesa]": {
+    "[local_defesa]": {
       "tipo": "texto",
       "rotulo": "Local e/ou link da conferência virtual",
       "obrigatorio": true
     },
 
-    "[numero pagina]": {
+    "[numero_paginas]": {
       "tipo": "texto",
       "rotulo": "Número de páginas do trabalho",
       "obrigatorio": true
@@ -50,13 +50,19 @@
       "obrigatorio": true
     },
 
-    "[Resumo]": {
+    "[resumo]": {
       "tipo": "texto",
       "rotulo": "Resumo do trabalho",
       "obrigatorio": true
     },
 
-    "[palavras chave]": {
+    "[matr_aluno]": {
+        "tipo": "texto",
+        "rotulo": "Matrícula do aluno",
+        "obrigatorio": true
+    },
+
+    "[palavras_chave]": {
       "tipo": "texto",
       "rotulo": "Palavras-chave do trabalho",
       "obrigatorio": true
@@ -74,100 +80,142 @@
       "obrigatorio": true
     },
 
-    "[nome do aluno]": {
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-    "[data defesa]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+    "[data_defesa]": {
+      "tipo": "texto",
+      "rotulo": "Data da defesa (por extenso)",
       "obrigatorio": true
     },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[cpf orientador]": {
+    "[cpf_orientador]": {
       "tipo": "texto",
       "rotulo": "CPF do orientador",
       "obrigatorio": true
     },
 
-    "[email orientador]": {
+    "[email_orientador]": {
       "tipo": "texto",
       "rotulo": "Email do orientador",
       "obrigatorio": true
     },
 
-    "[nome coorientador]": {
+    "[nome_coorientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do coorientador",
       "obrigatorio": true
     }, 
 
-    "[cpf coorientador]": {
+    "[cpf_coorientador]": {
       "tipo": "texto",
       "rotulo": "CPF do coorientador",
       "obrigatorio": true
     },
 
-    "[email coorientador]": {
+    "[email_coorientador]": {
       "tipo": "texto",
       "rotulo": "Email do coorientador",
       "obrigatorio": true
     },
 
-    "[nome membro externo]": {
+    "[nome_membro_externo1]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro externo ",
       "obrigatorio": true
     },
 
-    "[cpf membro externo]": {
+    "[cpf_membro_externo1]": {
       "tipo": "texto",
-      "rotulo": "CPF do membro externo ",
+      "rotulo": "CPF do membro externo 1",
       "obrigatorio": true
     },
 
-    "[email membro externo]": {
+    "[email_membro_externo1]": {
       "tipo": "texto",
-      "rotulo": "Email do membro externo ",
+      "rotulo": "Email do membro externo 1",
       "obrigatorio": true
     },
 
-    "[sigla_externo]": {
+    "[sigla_externo1]": {
       "tipo": "texto",
-      "rotulo": "Sigla instituição do membro externo ",
+      "rotulo": "Sigla instituição do membro externo 1",
+      "obrigatorio": true
+    },
+
+     "[nome_membro_externo2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[email_membro_externo2]": {
+      "tipo": "texto",
+      "rotulo": "Email do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[cpf_membro_externo2]": {
+      "tipo": "texto",
+      "rotulo": "CPF do membro externo 2",
+      "obrigatorio": true
+    },
+
+    "[sigla_externo2]": {
+      "tipo": "texto",
+      "rotulo": "Sigla instituição do membro externo 2",
       "obrigatorio": true
     },
   
-    "[nome membro interno]": {
+    "[nome_membro_interno1]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro interno 1",
       "obrigatorio": true
     },
 
-    "[cpf membro interno]": {
+    "[cpf_membro_interno1]": {
       "tipo": "texto",
-      "rotulo": "CPF do membro interno ",
+      "rotulo": "CPF do membro interno 1",
       "obrigatorio": true
     },
 
-    "[email membro interno]": {
+    "[email_membro_interno1]": {
       "tipo": "texto",
-      "rotulo": "Email do membro interno ",
+      "rotulo": "Email do membro interno 1",
+      "obrigatorio": true
+    },
+
+    "[nome_membro_interno2]": {
+      "tipo": "texto",
+      "rotulo": "Nome completo do membro interno 2",
+      "obrigatorio": true
+    },
+
+    "[cpf_membro_interno2]": {
+      "tipo": "texto",
+      "rotulo": "CPF do membro interno 2",
+      "obrigatorio": true
+    },
+
+    "[email_membro_interno2]": {
+      "tipo": "texto",
+      "rotulo": "Email do membro interno 2",
       "obrigatorio": true
     },
 
     "[Tese/Dissertação]": {
         "tipo": "radio",
         "opcoes": ["Dissertação", "Tese"],
-        "rotulo": "Trabalho de conclusão (Dissertação/Tese)",
+        "rotulo": "Trabalho de conclusão (Tese/Dissertação)",
         "obrigatorio": true
     },
 
@@ -177,11 +225,34 @@
       "obrigatorio": true   
     },
 
-    "[titular/suplente]": {
+    "[titular/suplente ex1]": {
         "tipo": "radio",
         "opcoes": ["titular", "suplente"],
-        "rotulo": "Membro externo titular ou suplente",
+        "rotulo": "Membro externo 1: titular ou suplente",
         "obrigatorio": true
-    }
+    },
+
+    "[titular/suplente ex2]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro externo 2: titular ou suplente",
+        "obrigatorio": true
+    },
+
+     "[titular/suplente in1]": {
+      "tipo": "radio",
+      "opcoes": ["titular", "suplente"],
+      "rotulo": "Membro interno 1: titular ou suplente",
+      "obrigatorio": true
+  },
+
+     "[titular/suplente in2]": {
+      "tipo": "radio",
+      "opcoes": ["titular", "suplente"],
+      "rotulo": "Membro interno 2: titular ou suplente",
+      "obrigatorio": true
+  }
+
+
   }
 }

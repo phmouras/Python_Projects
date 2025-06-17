@@ -2,25 +2,25 @@
 {
 
    "campos": {
-    "[nome do aluno]": {
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-   "[data defesa]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+   "[data_defesa]": {
+      "tipo": "texto",
+      "rotulo": "Data da defesa (por extenso)",
       "obrigatorio": true
     },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[matrícula orientador]": {
+    "[matricula_orientador]": {
       "tipo": "texto",
       "rotulo": "Matrícula do orientador",
       "obrigatorio": true
@@ -29,7 +29,7 @@
     "[doutorado/mestrado acadêmico]": {
         "tipo": "radio",
         "opcoes": ["doutorado", "mestrado acadêmico"],
-        "rotulo": "Doutorado ou Mestrado acadêmico",
+        "rotulo": "doutorado ou mestrado acadêmico",
         "obrigatorio": true
     },
 
@@ -39,16 +39,16 @@
       "obrigatorio": true
     },
 
-   "[data orientação]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+   "[data_orientação]": {
+      "tipo": "texto",
+      "rotulo": "Data de início da orientação (por extenso)",
       "obrigatorio": true
     },
 
     "[tese/dissertação]": {
         "tipo": "radio",
         "opcoes": ["tese", "dissertação"],
-        "rotulo": "Trabalho de conclusão (dissertação/tese)",
+        "rotulo": "Trabalho de conclusão (tese/dissertação)",
         "obrigatorio": true
     },
 

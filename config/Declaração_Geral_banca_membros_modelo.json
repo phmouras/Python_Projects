@@ -1,21 +1,22 @@
 {
    "campos": {
-    "[nome do aluno]": {
+
+    "[nome_aluno]": {
       "tipo": "texto",
       "rotulo": "Nome completo do aluno",
       "obrigatorio": true
     },
 
-   "[data defesa]": {
-      "tipo": "data",
-      "rotulo": "Data da defesa (dd/mm/aaaa)",
+   "[data_defesa]": {
+      "tipo": "texto",
+      "rotulo": "Data da defesa (por extenso)",
       "obrigatorio": true
     },
 
   "[tese/dissertação]": {
       "tipo": "radio",
       "opcoes": ["tese", "dissertação"],
-      "rotulo": "Trabalho de conclusão (dissertação/tese)",
+      "rotulo": "Trabalho de conclusão (tese/dissertação)",
       "obrigatorio": true
   },
 
@@ -32,52 +33,81 @@
       "obrigatorio": true
   },
 
-    "[nome orientador]": {
+    "[nome_orientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do orientador",
       "obrigatorio": true
     },
 
-    "[nome coorientador]": {
+    "[nome_coorientador]": {
       "tipo": "texto",
       "rotulo": "Nome completo do coorientador",
       "obrigatorio": true
     },
 
-    "[nome membro externo 1]": {
+    "[nome_membro_externo1]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro externo 1",
       "obrigatorio": true
     },
 
-    "[sigla_externo 1]": {
+    "[sigla_externo1]": {
       "tipo": "texto",
       "rotulo": "Sigla instituição do membro externo 1",
       "obrigatorio": true
     },
 
-    "[nome membro externo 2]": {
+    "[nome_membro_externo2]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro externo 2",
       "obrigatorio": true
     },
 
-    "[sigla_externo 2]": {
+    "[sigla_externo2]": {
       "tipo": "texto",
       "rotulo": "Sigla instituição do membro externo 2",
       "obrigatorio": true
     },
 
-    "[nome membro interno 1]": {
+    "[nome_membro_interno1]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro interno 1",
       "obrigatorio": true
     },
 
-    "[nome membro interno 2]": {
+    "[nome_membro_interno2]": {
       "tipo": "texto",
       "rotulo": "Nome completo do membro interno 2",
       "obrigatorio": true
-    }
+    },
+
+     "[titular/suplente ex1]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro externo 1: titular ou suplente",
+        "obrigatorio": true
+    },
+
+      "[titular/suplente ex2]": {
+        "tipo": "radio",
+        "opcoes": ["titular", "suplente"],
+        "rotulo": "Membro externo 2: titular ou suplente",
+        "obrigatorio": true
+    },
+
+     "[titular/suplente in1]": {
+      "tipo": "radio",
+      "opcoes": ["titular", "suplente"],
+      "rotulo": "Membro interno 1: titular ou suplente",
+      "obrigatorio": true
+  },
+
+     "[titular/suplente in1]": {
+      "tipo": "radio",
+      "opcoes": ["titular", "suplente"],
+      "rotulo": "Membro interno 1: titular ou suplente",
+      "obrigatorio": true
+  }
+
   }
 }

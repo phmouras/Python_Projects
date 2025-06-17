@@ -1,5 +1,19 @@
 {
     "campos": {
+
+        "[TESE/DISSERTAÇÃO]": {
+            "tipo": "radio",
+            "opcoes": ["dissertação", "tese"],
+            "rotulo": "Tipo de trabalho",
+            "obrigatorio": true
+        },
+
+        "[NOME_ALUNO]": {
+            "tipo": "texto",
+            "rotulo": "Nome completo do aluno",
+            "obrigatorio": true
+        },
+
         "[dia_data]": {
             "tipo": "texto",
             "rotulo": "Dia da defesa",
@@ -10,7 +24,7 @@
             "rotulo": "Mês da defesa",
             "obrigatorio": true
         },
-        "[ano_data]": {
+        "[ano_defesa]": {
             "tipo": "texto",
             "rotulo": "Ano da defesa",
             "obrigatorio": true
@@ -20,7 +34,7 @@
             "rotulo": "Horário do início da defesa",
             "obrigatorio": true
         },
-        "[horário término]": {
+        "[horário_término]": {
             "tipo": "texto",
             "rotulo": "Horário do término da defesa",
             "obrigatorio": true
@@ -30,67 +44,72 @@
             "rotulo": "Sala da defesa",
             "obrigatorio": true
         },
-        "[nome do aluno]": {
+        "[nome_aluno]": {
             "tipo": "texto",
             "rotulo": "Nome completo do aluno",
             "obrigatorio": true
         },
-        "[data defesa]": {
-            "tipo": "data",
-            "rotulo": "Data da defesa (dd/mm/aaaa)",
+        "[data_defesa]": {
+            "tipo": "texto",
+            "rotulo": "Data da defesa (por extenso)",
             "obrigatorio": true
         },
-        "[nome orientador]": {
+        "[nome_orientador]": {
             "tipo": "texto",
             "rotulo": "Nome completo do orientador",
             "obrigatorio": true
         },
-        "[nome membro externo1]": {
+        "[nome_membro_externo1]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro externo 1",
             "obrigatorio": true
         },
-        "[instituição_membro externo1]": {
+        "[instituição_membro_externo1]": {
             "tipo": "texto",
             "rotulo": "Instituição do membro externo 1",
             "obrigatorio": true
         },
-        "[nome membro externo2]": {
+        "[nome_membro_externo2]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro externo 2",
             "obrigatorio": true
         },
-        "[instituição_membro externo2]": {
+        "[instituição_membro_externo2]": {
             "tipo": "texto",
             "rotulo": "Instituição do membro externo 2",
             "obrigatorio": true
         },
-        "[nome membro externo3]": {
+
+        "[nome_membro_externo3]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro externo 3",
             "obrigatorio": true
         },
-        "[instituição_membro externo3]": {
+
+        "[instituição_membro_externo3]": {
             "tipo": "texto",
             "rotulo": "Instituição do membro externo 3",
             "obrigatorio": true
         },
-        "[nome membro interno1]": {
+
+        "[nome_membro_interno1]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro interno 1",
             "obrigatorio": true
         },
-        "[nome membro interno2]": {
+
+        "[nome_membro_interno2]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro interno 2",
             "obrigatorio": true
         },
-        "[nome membro interno3]": {
+        
+        "[nome_membro_interno3]": {
             "tipo": "texto",
             "rotulo": "Nome completo do membro interno 3",
             "obrigatorio": true
         },
-        "[nome coorientador]": {
+        "[nome_coorientador]": {
             "tipo": "texto",
             "rotulo": "Nome completo do coorientador",
             "obrigatorio": true
@@ -103,10 +122,10 @@
             "obrigatorio": true
         },
 
-        "[doutorado mestrado acadêmico]": {
+        "[doutorando(a)/mestrando(a)]": {
             "tipo": "radio",
-            "opcoes": ["doutorado", "mestrado acadêmico"],
-            "rotulo": "Doutorado ou Mestrado acadêmico",
+            "opcoes": ["doutorando(a)", "mestrando(a)"],
+            "rotulo": "Aluno(a) mestrando(a) ou doutorando(a)",
             "obrigatorio": true
         },
 
@@ -122,16 +141,16 @@
             "obrigatorio": true
         },
 
-        "[data coorientação]": {
+        "[data_coorientação]": {
             "tipo": "texto",
             "rotulo": "Data inicial da coorientação",
             "obrigatorio": true
         },
 
-    "[dissertação/tese]": {
+    "[tese/dissertação]": {
         "tipo": "radio",
         "opcoes": ["dissertação", "tese"],
-        "rotulo": "Trabalho de conclusão (dissertação/tese)",
+        "rotulo": "Trabalho de conclusão (tese/dissetação)",
         "obrigatorio": true
     },
 
@@ -141,15 +160,10 @@
             "obrigatorio": true
         },
 
-        "[Samir/Ranna]": {
-            "tipo": "texto",
-            "rotulo": "Samir ou Ranna",
-            "obrigatorio": true
-        },
 
     "[Samir/Ranna]": {
         "tipo": "radio",
-        "opcoes": ["Samir", "Ranna"],
+        "opcoes": ["Samir Oliveira da Silva Wanderley", "Ranna Martins Gomes da Silveira"],
         "rotulo": "Responsável secretaria",
         "obrigatorio": true
     },
@@ -161,60 +175,69 @@
         "obrigatorio": true
     },
 
-        "[124.126.797-97/ 130.312.197-24]": {
-            "tipo": "texto",
-            "rotulo": "CPF do responsável (Samir/Ranna)",
-            "obrigatorio": true
-        },
-
-        "[124.126.797-97/ 130.312.197-24]": {
+        "[124.126.797-97/130.312.197-24]": {
             "tipo": "radio",
             "opcoes": ["124.126.797-97", "130.312.197-24"],
             "rotulo": "Matrícula do responsável (Samir/Ranna)",
             "obrigatorio": true
         },
         
-        "[cpf orientador]": {
+        "[cpf_orientador]": {
             "tipo": "texto",
             "rotulo": "CPF do orientador",
             "obrigatorio": true
         },
-        "[matrícula orientador]": {
+        "[matricula_orientador]": {
             "tipo": "texto",
             "rotulo": "Matrícula do orientador",
             "obrigatorio": true
         },
-        "[cpf coorientador]": {
+        "[cpf_coorientador]": {
             "tipo": "texto",
             "rotulo": "CPF do coorientador",
             "obrigatorio": true
         },
-        "[cpf membro externo1]": {
+        "[cpf_membro_externo1]": {
             "tipo": "texto",
             "rotulo": "CPF do membro externo 1",
             "obrigatorio": true
         },
-        "[cpf membro externo2]": {
+        "[cpf_membro_externo2]": {
             "tipo": "texto",
             "rotulo": "CPF do membro externo 2",
             "obrigatorio": true
         },
-        "[cpf membro externo3]": {
+
+        "[cpf_membro_externo3]": {
             "tipo": "texto",
             "rotulo": "CPF do membro externo 3",
             "obrigatorio": true
         },
-        "[cpf membro interno1]": {
+
+        "[cpf_membro_interno1]": {
             "tipo": "texto",
             "rotulo": "CPF do membro interno 1",
             "obrigatorio": true
         },
-        "[matr membro interno1]": {
+
+        "[cpf_membro_interno2]": {
+            "tipo": "texto",
+            "rotulo": "CPF do membro interno 2",
+            "obrigatorio": true
+        },
+
+        "[cpf_membro_interno3]": {
+            "tipo": "texto",
+            "rotulo": "CPF do membro interno 3",
+            "obrigatorio": true
+        },
+
+        "[matr_membro_interno1]": {
             "tipo": "texto",
             "rotulo": "Matrícula do membro interno 1",
             "obrigatorio": true
         },
-        "[matr membro interno2]": {
+        "[matr_membro_interno2]": {
             "tipo": "texto",
             "rotulo": "CPF do membro interno 2",
             "obrigatorio": true
