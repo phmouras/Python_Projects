@@ -482,7 +482,106 @@ class DocumentFillerApp:
             messagebox.showinfo("Sucesso", "Dados salvos com sucesso!")
         except Exception as e:
             messagebox.showerror("Erro", f"Erro ao salvar dados: {str(e)}")
-    
+
+    def replace_text_preserve_formatting(self, paragraph, old_text, new_text):
+        """
+        Substitui texto mantendo TODA a formatação original (estilos, fontes, cores, etc.)
+        """
+        if old_text not in paragraph.text:
+            return False
+
+        # Lista para armazenar informações sobre as runs
+        run_info = []
+        current_pos = 0
+        
+        # Coletar informações sobre todas as runs do parágrafo
+        for run in paragraph.runs:
+            run_text = run.text
+            run_length = len(run_text)
+            run_info.append({
+                'run': run,
+                'start': current_pos,
+                'end': current_pos + run_length,
+                'text': run_text,
+                'font': run.font
+            })
+            current_pos += run_length
+
+        # Encontrar todas as ocorrências do texto a substituir
+        full_text = paragraph.text
+        occurrences = []
+        start = 0
+        while True:
+            pos = full_text.find(old_text, start)
+            if pos == -1:
+                break
+            occurrences.append((pos, pos + len(old_text)))
+            start = pos + len(old_text)
+
+        if not occurrences:
+            return False
+
+        # Processar de trás para frente para não alterar posições
+        for start_pos, end_pos in reversed(occurrences):
+            # Identificar quais runs contêm o texto a substituir
+            affected_runs = []
+            for info in run_info:
+                if info['start'] < end_pos and info['end'] > start_pos:
+                    affected_runs.append(info)
+
+            if not affected_runs:
+                continue
+
+            # Para cada run afetada, calcular a parte que precisa ser substituída
+            for run_data in affected_runs:
+                run = run_data['run']
+                run_start = run_data['start']
+                run_end = run_data['end']
+                
+                # Calcular posições relativas dentro da run
+                rel_start = max(0, start_pos - run_start)
+                rel_end = min(len(run.text), end_pos - run_start)
+                
+                # Parte antes da substituição
+                before_text = run.text[:rel_start]
+                
+                # Parte depois da substituição
+                after_text = run.text[rel_end:]
+                
+                # Determinar qual parte do novo texto vai nesta run
+                if run == affected_runs[0]['run']:  # Primeira run afetada
+                    new_part = new_text
+                else:
+                    new_part = ""
+                
+                # Construir o novo texto para esta run
+                run.text = before_text + new_part + after_text
+
+        return True
+
+    def copy_run_formatting(source_run, target_run):
+        """Copia TODOS os atributos de formatação de uma run para outra"""
+        # Atributos básicos
+        target_run.bold = source_run.bold
+        target_run.italic = source_run.italic
+        target_run.underline = source_run.underline
+        
+        # Propriedades da fonte
+        if source_run.font.name:
+            target_run.font.name = source_run.font.name
+        if source_run.font.size:
+            target_run.font.size = source_run.font.size
+        if source_run.font.color.rgb:
+            target_run.font.color.rgb = source_run.font.color.rgb
+        target_run.font.highlight_color = source_run.font.highlight_color
+        target_run.font.subscript = source_run.font.subscript
+        target_run.font.superscript = source_run.font.superscript
+        target_run.font.strike = source_run.font.strike
+        target_run.font.all_caps = source_run.font.all_caps
+        target_run.font.small_caps = source_run.font.small_caps
+
+
+
     def generate_documents(self):
         # Pedir diretório para salvar os documentos gerados
         output_dir = filedialog.askdirectory(title="Selecione o diretório para salvar os documentos gerados")
@@ -530,35 +629,54 @@ class DocumentFillerApp:
                 # Carregar o documento
                 doc = Document(doc_path)
                 
-                # Substituir os campos nos parágrafos
+                # Processar todos os parágrafos
                 for para in doc.paragraphs:
                     for field_key, field_value in self.field_values.items():
                         if field_key in para.text:
-                            para.text = para.text.replace(field_key, field_value)
+                            self.replace_text_preserve_formatting(para, field_key, field_value)
                 
-                # Substituir os campos nas tabelas
+                # Processar tabelas
                 for table in doc.tables:
                     for row in table.rows:
                         for cell in row.cells:
-                            for paragraph in cell.paragraphs:
+                            for para in cell.paragraphs:
                                 for field_key, field_value in self.field_values.items():
-                                    if field_key in paragraph.text:
-                                        paragraph.text = paragraph.text.replace(field_key, field_value)
-                
+                                    if field_key in para.text:
+                                        self.replace_text_preserve_formatting(para, field_key, field_value)
+
                 # Substituir nos cabeçalhos e rodapés
                 for section in doc.sections:
-                    # Verificar se o cabeçalho/rodapé não é None antes de tentar iterar
-                    if section.header and section.header.paragraphs:
+                    # Processar cabeçalho
+                    if section.header is not None:
                         for paragraph in section.header.paragraphs:
-                            for field_key, field_value in self.field_values.items():
-                                if field_key in paragraph.text:
-                                    paragraph.text = paragraph.text.replace(field_key, field_value)
+                            if paragraph.text:  # Verificar se o parágrafo tem texto
+                                for field_key, field_value in self.field_values.items():
+                                    if field_key in paragraph.text:
+                                        self.replace_text_preserve_formatting(paragraph, field_key, field_value)
                     
-                    if section.footer and section.footer.paragraphs:
+                    # Processar rodapé
+                    if section.footer is not None:
                         for paragraph in section.footer.paragraphs:
-                            for field_key, field_value in self.field_values.items():
-                                if field_key in paragraph.text:
-                                    paragraph.text = paragraph.text.replace(field_key, field_value)
+                            if paragraph.text:  # Verificar se o parágrafo tem texto
+                                for field_key, field_value in self.field_values.items():
+                                    if field_key in paragraph.text:
+                                        self.replace_text_preserve_formatting(paragraph, field_key, field_value)        
+#                 # Substituir nos cabeçalhos e rodapés
+#                 for section in doc.sections:
+#                     # Verificar se o cabeçalho/rodapé não é None antes de tentar iterar
+#                     if section.header and section.header.paragraphs:
+#                         for paragraph in section.header.paragraphs:
+#                             for field_key, field_value in self.field_values.items():
+#                                 if field_key in paragraph.text:
+#                                     self.replace_text_preserve_formatting(para, field_key, field_value)
+#  #                                   paragraph.text = paragraph.text.replace(field_key, field_value)
+                    
+#                     if section.footer and section.footer.paragraphs:
+#                         for paragraph in section.footer.paragraphs:
+#                             for field_key, field_value in self.field_values.items():
+#                                 if field_key in paragraph.text:
+#                                     self.replace_text_preserve_formatting(para, field_key, field_value)
+#                                     paragraph.text = paragraph.text.replace(field_key, field_value)
                 
                 # Definir nome do arquivo de saída
                 base_name = os.path.splitext(doc_name)[0]
